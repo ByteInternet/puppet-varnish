@@ -76,6 +76,8 @@ class varnish (
   $extra_options                = {},
 ) {
 
+  notify{"extra_options are: ${extra_options}": }
+
   # read parameters
   include varnish::params
 
